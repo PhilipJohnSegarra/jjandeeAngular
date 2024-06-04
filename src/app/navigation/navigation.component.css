@@ -1,0 +1,201 @@
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    flex-wrap: wrap;
+    padding: 1rem 5rem;
+    box-sizing: border-box;
+    position: relative;
+    position: fixed;
+    top: 0;
+    transition: all .5s;
+}
+.Brand-logo{
+    display: inline-block;
+    width: auto;
+    height: 52px;
+    margin-left: -1rem;
+}
+.nav-links-container{
+    color: #b7410e;
+}
+.info-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    width: 80%;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    position: relative;
+}
+#email{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+}
+#socialmedia-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2rem;
+}
+#phone{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+}
+#location{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 5px;
+    max-width: 136px;
+    flex-wrap: wrap;
+}
+#location > p{
+    font-size: 11px; color: #4a4444; max-width: 103px; margin-left: 1.5rem;
+}
+a{
+    cursor: pointer;
+}
+.navbar{
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 65%;
+    height: auto;
+    background-color: #506979;
+    flex-wrap: wrap;
+    transition: all .3s;
+}
+.navbar-buttons-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.navbar-buttons{
+    padding: 1rem 2rem;
+    color: white;
+    transition: all .3s;
+    text-decoration: none;
+}
+.navbar-buttons:hover{
+    background-color: #b7410e;
+}
+.inquire-button{
+    height: 90%;
+    padding: .6rem 2rem;
+    color: white;
+    margin-right: .5rem;
+    border-radius: 8px;
+}
+#inquire{
+    background-color: #b7410e;
+    height: 100%;
+    transition: all .2s;
+}
+#inquire:hover{
+    background-color: #a1390c;
+}
+#navbartoggler{
+    height: 100%;
+    width: auto;
+    border: none;
+    background: transparent;
+    display: none;
+}
+
+@media(max-width:1205px){
+    nav{
+        display: flex;
+        flex-direction: column;
+        padding: 0 1rem 1rem 1rem;
+    }
+    .info-container{
+        display: none;
+        height: 150px;
+    }
+    #navbar{
+        position: relative;
+        left: 0;
+        top: 0;
+        transform: translate(0, 0);
+        display: none;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        background-color: #506979;
+        flex-wrap: nowrap;
+        transition: all .3s;
+        padding: 1rem;
+        margin: 2rem 0 0 0;
+    }
+    .navbar-buttons-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        margin: 0 0 1rem 0;
+    }
+    #navbartoggler{
+        display: block;
+    }
+    #location{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        column-gap: 5px;
+        max-width: 100%;
+        flex-wrap: nowrap;
+    }
+    #location > p{
+        font-size: 11px; color: #4a4444; max-width: 100%; margin-left: 1.5rem;
+    }
+    .brand-container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .info-container{
+        flex-direction:column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        position: relative;
+    }
+}
+@media(min-width:1205px){
+    #navbar{
+        display: flex;
+    }
+    .info-container{
+        display: flex;
+    }
+}

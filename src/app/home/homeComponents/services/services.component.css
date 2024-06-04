@@ -1,0 +1,88 @@
+.services-container{
+    width: 100%;
+    height: auto;
+    display: flex;;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    
+}
+.main-services{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    overflow: auto;
+    padding: 0 12rem 0 12rem;
+}
+.services-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: 0 1rem 0 0;
+    min-width: 350px;
+    min-height: auto;
+    height: 500px;
+}
+
+.services-card img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.other-services{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.other-services-card{
+    width: 100%;
+    height: auto;
+    padding: 6rem 12rem 6rem 12rem;
+    
+}
+.other-services-card p{
+    max-width: 50%;
+    text-align: justify;
+    font-weight: 300;
+}
+.other-services-card h5{
+    margin: 0 0 1rem 0;;
+}
+.os-first{
+    background-image: url('/assets/Images/rental.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.os-second{
+    background-image: url('/assets/Images/supply.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+.os-third{
+    background-image: url('/assets/Images/aggregates.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}

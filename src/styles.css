@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    box-sizing: border-box;
+}
+
+.background-main{
+    background-color: #B7410E;
+}
+.text-main{
+    color: #B7410E;
+}
+.background-secondary{
+    background-color: #506979;
+}
+.text-secondary{
+    color: #506979;
+}
+.text-light{
+    color: #ffffff;
+}
+.text-dark{
+    color: #000000;
+}
+.background-light{
+    background-color: #ffffff;
+}
+.background-tertiary{
+    background-color: #595959;
+}
