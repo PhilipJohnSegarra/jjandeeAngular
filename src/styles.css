@@ -30,3 +30,21 @@
 .background-tertiary{
     background-color: #595959;
 }
+.padding-sides-content{
+    padding: 0 12rem;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+@media(max-width:1205px){
+    .padding-sides-content{
+        padding: 0 6rem;
+    }
+}
+@media(max-width:700px){
+    .padding-sides-content{
+        padding: 0 1rem;
+    }
+}
