@@ -30,9 +30,14 @@ export class NavigationComponent implements OnInit, AfterViewInit, OnDestroy {
       this.resizeObservable$ = fromEvent(window, 'resize');
       this.resizeSubscription$ = this.resizeObservable$.subscribe(evt => {
         console.log('event: ', evt);
-        if (window.innerWidth >= 1205 && this.navCollapsed === false) {
+        if (window.innerWidth >= 1205 && this.navCollapsed === true) {
           this.renderer.setStyle(this.infoContainer.nativeElement, 'display', 'flex');
           this.renderer.setStyle(this.navbar.nativeElement, 'display', 'flex');
+        }
+        else if(window.innerWidth <= 1205){
+          this.navCollapsed = true;
+          this.renderer.setStyle(this.infoContainer.nativeElement, 'display', 'none');
+          this.renderer.setStyle(this.navbar.nativeElement, 'display', 'none');
         }
       });
     }

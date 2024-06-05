@@ -20,6 +20,7 @@
     color: #8f8f8f;
     cursor: pointer;
     margin: 1rem 0 0 0;
+    text-decoration: none;
 }
 .site-links-container a:hover{
     color: #ffffff;
@@ -37,6 +38,7 @@
 }
 .socmed-links-container a{
     cursor: pointer;
+    text-decoration: none;
 }
 .location-container{
     width: 100%;

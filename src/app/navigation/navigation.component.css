@@ -13,6 +13,7 @@ nav{
     position: fixed;
     top: 0;
     transition: all .5s;
+    z-index: 100;
 }
 .Brand-logo{
     display: inline-block;
@@ -46,6 +47,10 @@ nav{
     justify-content: center;
     align-items: center;
     column-gap: 2rem;
+}
+#socialmedia-links a{
+    text-decoration: none;
+    color: #b7410e;
 }
 #phone{
     display: flex;
@@ -106,6 +111,7 @@ a{
     color: white;
     margin-right: .5rem;
     border-radius: 8px;
+    text-decoration: none;
 }
 #inquire{
     background-color: #b7410e;
