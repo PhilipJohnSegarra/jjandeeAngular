@@ -15,7 +15,6 @@
     height: auto;
     width: 100%;
     overflow: auto;
-    padding: 0 12rem 0 12rem;
 }
 .services-card{
     display: flex;
@@ -47,9 +46,7 @@
 }
 .other-services-card{
     width: 100%;
-    height: auto;
-    padding: 6rem 12rem 6rem 12rem;
-    
+    height: auto; 
 }
 .other-services-card p{
     max-width: 50%;

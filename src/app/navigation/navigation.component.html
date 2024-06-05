@@ -1,7 +1,7 @@
 <nav id="header" #header>
   <div class="brand-container">
-    <a class="Brand-logo"><img src="assets/jjandeeicon.png" alt="jjandee icon" style="height: 100%;width: auto;"></a>
-    <button type="button" id="navbartoggler" #navbartoggler (click)="onTogglerClick()">
+    <a href="" class="Brand-logo"><img src="assets/jjandeeicon.png" alt="jjandee icon" style="height: 100%;width: auto;"></a>
+    <button type="button" id="navbartoggler" #navbartoggler (click)="onTogglerClick()" style="height: 100%;">
       <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24"><path fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 6.001h18m-18 6h18m-18 6h18"/></svg>
     </button>
   </div>
@@ -36,8 +36,8 @@
     <div class="navbar" id="navbar" #navbar>
         <div class="navbar-buttons-container">
             <a routerLink="/" class="navbar-buttons">Home</a>
-            <a class="navbar-buttons">About Us</a>
-            <a class="navbar-buttons" href="#services">Services</a>
+            <a class="navbar-buttons" href="#about" target="_top">About Us</a>
+            <a class="navbar-buttons" href="#services" target="_parent">Services</a>
             <a class="navbar-buttons">Projects</a>
             <a class="navbar-buttons">Contact Us</a>
         </div>

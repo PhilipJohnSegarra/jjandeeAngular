@@ -1,6 +1,6 @@
 import { Component, ElementRef, HostListener, Renderer2, ViewChild, AfterViewInit } from '@angular/core';
 import { Routes, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
-
+import { fromEvent, Observable, Subscription } from "rxjs";
 
 @Component({
   selector: 'app-navigation',
@@ -17,6 +17,8 @@ export class NavigationComponent implements AfterViewInit {
 
   lastScrollTop: number = 0;
   navCollapsed: boolean = true;
+  resizeObservable$: Observable<Event>
+resizeSubscription$: Subscription
   //public innerWidth:number;
 
   constructor(private renderer: Renderer2) {
@@ -24,8 +26,24 @@ export class NavigationComponent implements AfterViewInit {
     this.navbar = new ElementRef(null);
     this.infoContainer = new ElementRef(null);
     this.navbarToggler = new ElementRef(null);
+    this.resizeObservable$ = new Observable<Event>();
+    this.resizeSubscription$ = new Subscription();
     //this.innerWidth = window.innerWidth;
   }
+
+  ngOnInit() {
+    this.resizeObservable$ = fromEvent(window, 'resize')
+    this.resizeSubscription$ = this.resizeObservable$.subscribe( evt => {
+      console.log('event: ', evt)
+      if(window.innerWidth >= 1205 && this.navCollapsed === false){
+        this.renderer.setStyle(this.infoContainer.nativeElement, 'display', 'flex');
+        this.renderer.setStyle(this.navbar.nativeElement, 'display', 'flex');
+      }
+    })
+}
+ngOnDestroy() {
+  this.resizeSubscription$.unsubscribe()
+}
 
   ngAfterViewInit() {
     // Ensure this line is removed if using (click) in the template

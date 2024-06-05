@@ -5,5 +5,13 @@
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    padding: 2rem 12rem;
+}
+.inner-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    max-width: 1502px;
 }
