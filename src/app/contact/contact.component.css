@@ -85,6 +85,7 @@
     padding:10px 20px 10px 20px;
     background-color:#b7410e;
     color:white;
+    cursor: pointer;
 }
 @media(max-width:920px){
     .contact-form{

@@ -20,11 +20,11 @@
                   </svg>&nbsp;09175850242</p>
             </div>          
             <div class="contact-fillup-form">
-                <form method="post" id="contactForm">
-                    <input class="customer-details" type="text" placeholder="Name:" name="Name" required/>
-                    <input class="customer-details" type="email" placeholder="Email:" name="Email" required/>
-                    <input class="customer-details" type="text" placeholder="Phone Number: (e.g. 09xxxxxxxxx)" name="Number" pattern="^\d{11,}$"/>
-                    <textarea class="customer-details customer-message" type="text" placeholder="Message" name="Message" required></textarea>
+                <form method="post" id="contactForm" (submit)="sendEmail($event)">
+                    <input class="customer-details" type="text" placeholder="Name:" name="name" id="name" #name required/>
+                    <input class="customer-details" type="email" placeholder="Email:" name="email" id="email" #email required/>
+                    <input class="customer-details" type="text" placeholder="Phone Number: (e.g. 09xxxxxxxxx)" name="number" id="number" #number pattern="^\d{11,}$"/>
+                    <textarea class="customer-details customer-message" type="text" placeholder="Message" name="message" id="message" #message required></textarea>
                     <button class="contact-button" type="submit">Submit</button>
                 </form> 
             </div>
